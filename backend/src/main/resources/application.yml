@@ -1,0 +1,11 @@
+server:
+  port: ${PORT:8080}
+
+ccp:
+  mongo:
+    # Example: mongodb://<host>:27017/appuser?authMechanism=PLAIN&authSource=$external&tls=true&loadBalanced=false
+    uri: ${MONGO_URI:}
+    username: ${MONGO_USER:}
+    password: ${MONGO_PASS:}
+db:
+  name: ${DB_NAME:appuser}
